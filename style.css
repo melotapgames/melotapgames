@@ -186,6 +186,9 @@ img { display: block; max-width: 100%; }
 .legal-summary { margin-bottom: 48px; padding: 24px; border-left: 4px solid var(--violet); background: var(--lilac); color: var(--ink); }
 .legal-content section + section { margin-top: 42px; }
 .legal-content h2 { margin-bottom: 13px; color: var(--ink); font-size: 25px; letter-spacing: -.03em; }
+.legal-content h3 { margin: 28px 0 10px; color: var(--ink); font-size: 18px; line-height: 1.35; letter-spacing: -.015em; }
+.legal-content section { scroll-margin-top: 120px; }
+.legal-content strong { color: var(--ink); }
 .legal-content p + p { margin-top: 12px; }
 .legal-content ul { display: grid; gap: 8px; margin: 14px 0 0 20px; }
 .legal-content a { color: var(--violet); text-decoration: underline; text-underline-offset: 3px; }
