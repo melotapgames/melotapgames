@@ -259,6 +259,35 @@ img { display: block; max-width: 100%; }
   .footer-legal-name { text-align: left; }
 }
 
+/* Service terms and support: readable long text and contact information. */
+.service-terms .page-hero h1, .contact-page .page-hero h1 {
+  font-size: clamp(38px, 6vw, 76px);
+  font-weight: 650;
+  letter-spacing: -.025em;
+  line-height: 1.15;
+}
+.service-terms .legal-content { font-size: 17px; line-height: 1.85; overflow-wrap: anywhere; }
+.service-terms .legal-content h2 { font-weight: 650; letter-spacing: -.015em; line-height: 1.4; }
+.service-terms .legal-content section + section { margin-top: 48px; }
+.service-terms .legal-meta > p { line-height: 1.8; }
+.terms-toc { display: grid; gap: 12px; margin-top: 24px; }
+.terms-toc a { margin-top: 0; line-height: 1.6; }
+.legal-package { overflow-wrap: anywhere; }
+.contact-page .contact-layout > *, .contact-page .inquiry-card { min-width: 0; }
+.contact-page .contact-primary h2 { font-size: clamp(32px, 4.5vw, 60px); line-height: 1.18; letter-spacing: -.025em; }
+.contact-page .section-title { font-size: clamp(32px, 4.5vw, 60px); line-height: 1.18; letter-spacing: -.025em; }
+.contact-page .contact-email, .contact-page .detail-item a { overflow-wrap: anywhere; }
+.contact-page .contact-email, .contact-page .inquiry-card a { color: #6340c9; text-decoration: underline; text-underline-offset: 3px; }
+.contact-page .inquiry-card p { font-size: 16px; line-height: 1.75; }
+.contact-page .inquiry-card p + p { margin-top: 16px; }
+.contact-page .inquiry-card { scroll-margin-top: 110px; }
+@media (max-width: 760px) {
+  .service-terms .legal-content { font-size: 16px; }
+  .service-terms .legal-content h2 { font-size: 23px; }
+  .service-terms .page-hero p, .contact-page .page-hero p { font-size: 18px; }
+  .contact-page .contact-primary, .contact-page .contact-details { padding: 32px 24px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *,*::before,*::after { transition-duration: .01ms !important; }
